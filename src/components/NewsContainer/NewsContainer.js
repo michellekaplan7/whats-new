@@ -2,9 +2,9 @@ import React from 'react';
 import NewsArticle from '../NewsArticle/NewsArticle';
 import './NewsContainer.css'
 
-const NewsContainer = ({local}) => {
+const NewsContainer = ({news}) => {
 
-    const localNews = local.map(data => {
+    const newsArticles = news.map(data => {
         return (
             <NewsArticle
                 img={data.img}
@@ -18,7 +18,7 @@ const NewsContainer = ({local}) => {
 
     return (
         <section className='card-container'>
-            {localNews}
+            {newsArticles}
         </section>
     )
 }
