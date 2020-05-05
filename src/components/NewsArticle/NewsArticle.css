@@ -7,7 +7,6 @@
 
 .card-image {
     width: 100%;
-    /* height: 60%; */
 }
 
 .read-article-button {
@@ -18,7 +17,12 @@
     color: #FFF;
     font-size: 1em;
     font-weight: bold;
+    cursor: pointer;
 }
+
+.read-article-button:hover {
+    background-color: #d0acef;
+  }
 
 .card-body {
     padding: 20px;
