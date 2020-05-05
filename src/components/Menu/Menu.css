@@ -1,7 +1,9 @@
 .nav {
-    background-color: #587A8A;
+    background-color: #141527;
     grid-area: m;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 span {
@@ -12,4 +14,18 @@ span {
 h1 {
     color: #FFF;
     font-weight: bold;
+    margin-bottom: 52px;
+}
+
+.nav-button {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 13px;
+    border: none;
+    /* background: none; */
+}
+
+.nav-button:hover {
+    background-color: #ffad01;
+    cursor: pointer;
 }
