@@ -1,0 +1,45 @@
+/* header {
+    align-items: center;
+    background-color: #C4C4C4;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3em;
+  }
+  
+  .logo {
+    height: 8em;
+    width: 8em;
+  }
+  
+  .search {
+    background-image: url("assets/search.svg");
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    height: 5em;
+    outline-color: #F2A22C;
+    padding-left: 4em;
+    width: 45em;
+  }
+  
+  button {
+    background-color: #F2A22C;
+    border: 1px solid black;
+    cursor: pointer;
+    height: 3em;
+    margin-right: 3em;
+    padding: 1em;
+  }
+  
+  button:hover {
+    border: solid 2px #FFF;
+    filter: brightness(120%);
+  }
+  
+  main {
+    display: flex;
+    flex-grow: 1;
+  }
+  
+  .welcome-message {
+    margin-bottom: 1em;
+  } */

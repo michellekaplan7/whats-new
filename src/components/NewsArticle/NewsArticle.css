@@ -1,0 +1,31 @@
+.card {
+    box-sizing: border-box;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image {
+    width: 100%;
+}
+
+.read-article-button {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    background-color: #b46bf0;
+    color: #FFF;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.read-article-button:hover {
+    background-color: #d0acef;
+  }
+
+.card-body {
+    padding: 20px;
+    flex-grow: 1;
+    background-color: #FFF;;
+}

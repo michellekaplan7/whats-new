@@ -1,0 +1,15 @@
+.nav {
+    background-color: #587A8A;
+    grid-area: m;
+    padding: 10px;
+}
+
+span {
+    color: #ffad01;
+    font-weight: bold;
+}
+
+h1 {
+    color: #FFF;
+    font-weight: bold;
+}
