@@ -5,10 +5,17 @@
 }
 
 .app {
-  display: flex;
-  background: #141527;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-areas:
+  "s s s s s"
+  "m c c c c";
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 100px auto;
+  justify-content: center;
+  flex-direction: column;
+  background: orange;
   height: 100vh;
   text-align: center;
   width: 100%;
-  color: #FFF;
 }

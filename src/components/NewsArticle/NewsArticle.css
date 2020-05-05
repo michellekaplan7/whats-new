@@ -3,3 +3,8 @@
     border: 3px solid black;
     padding: 10px;
 }
+
+.card-image {
+    width: 40em;
+    height: 20em;
+}

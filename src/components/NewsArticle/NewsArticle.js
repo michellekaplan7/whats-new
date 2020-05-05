@@ -4,7 +4,7 @@ import './NewsArticle.css';
 const NewsArticle = ({ img, headline, description, url, id }) => {
     return (
         <div className='card'>
-            <img src={img} />
+            <img className='card-image' src={img} />
             <h1>{headline}</h1>
             <p>{description}</p>
             <button>Read Article</button>
