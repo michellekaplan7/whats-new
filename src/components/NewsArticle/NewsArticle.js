@@ -9,7 +9,7 @@ const NewsArticle = ({ img, headline, description, url, id }) => {
                 <h2>{headline}</h2>
                 <p>{description}</p>
             </div>
-            <button className='read-article-button'>Read Article →</button>
+            <a href={url}><button className='read-article-button'>Read Article →</button></a>
         </div>
     )
 }
