@@ -5,9 +5,11 @@ const NewsArticle = ({ img, headline, description, url, id }) => {
     return (
         <div className='card'>
             <img className='card-image' src={img} />
-            <h1>{headline}</h1>
-            <p>{description}</p>
-            <button>Read Article</button>
+            <div className='card-body'>
+                <h2>{headline}</h2>
+                <p>{description}</p>
+            </div>
+            <button className='read-article-button'>Read Article →</button>
         </div>
     )
 }

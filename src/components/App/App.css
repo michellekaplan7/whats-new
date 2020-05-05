@@ -6,9 +6,8 @@
 
 .app {
   display: grid;
-  grid-gap: 5px;
   grid-template-areas:
-  "s s s s s"
+  "m s s s s"
   "m c c c c";
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 100px auto;

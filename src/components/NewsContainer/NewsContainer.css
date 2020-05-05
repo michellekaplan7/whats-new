@@ -4,6 +4,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
-    overflow: scroll;
-    background-color: red;
+    overflow-y: auto;
+    background-color: #141527;
 }

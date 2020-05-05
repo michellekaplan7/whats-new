@@ -5,7 +5,7 @@ const Menu = () => {
 
     return (
         <nav className='nav'>
-            hello
+            <h1>What's <span>New?</span></h1>
         </nav>
     )
 }
