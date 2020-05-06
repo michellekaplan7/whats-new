@@ -10,9 +10,10 @@ input {
     border-radius: 2em;
     border: none;
     font-size: 1.5em;
-    font-weight: bold;
+    font-weight: 900;
     height: 50%;
     margin-left: 1em;
+    padding-left: .5em;
     width: 100%;
 }
 
@@ -23,7 +24,7 @@ input {
     color: #FFF;
     cursor: pointer;
     font-size: 1em;
-    font-weight: bold;
+    font-weight: 900;
     height: 50%;
     letter-spacing: 2px;
     margin-left: 1em;

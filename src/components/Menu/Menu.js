@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Menu.css'
+import PropTypes from 'prop-types';
 import { render } from '@testing-library/react';
 
 class Menu extends Component {
@@ -27,5 +28,9 @@ handleClick = (event) => {
     }
 }
 
+Menu.propTypes = {
+    filterNews: PropTypes.func,
+    selectedTopicTitle: PropTypes.string
+}
 
 export default Menu;

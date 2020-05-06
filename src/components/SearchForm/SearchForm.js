@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './SearchForm.css';
+import PropTypes from 'prop-types';
 import { render } from '@testing-library/react';
 
 class SearchForm extends Component {
@@ -39,6 +40,10 @@ render() {
         </form>
         )         
     }
+}
+
+SearchForm.propTypes = {
+    searchNews: PropTypes.func
 }
 
 export default SearchForm;
