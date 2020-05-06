@@ -1,32 +1,32 @@
 .card {
-    border: 3px solid black;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
+  border: 3px solid black;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-image {
-    width: 100%;
-    color: #FFF;
+  color: #fff;
+  width: 100%;
 }
 
 .read-article-button {
-    background-color: #b46bf0;
-    border: none;
-    color: #FFF;
-    cursor: pointer;
-    font-size: 1em;
-    font-weight: 700;
-    padding: 10px;
-    width: 100%;
+  background-color: #b46bf0;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 10px;
+  width: 100%;
 }
 
 .read-article-button:hover {
-    background-color: #d0acef;
-  }
+  background-color: #d0acef;
+}
 
 .card-body {
-    background-color: #FFF;
-    flex-grow: 1;
-    padding: 20px;
+  background-color: #fff;
+  flex-grow: 1;
+  padding: 20px;
 }
