@@ -1,6 +1,6 @@
 .card {
-    box-sizing: border-box;
     border: 3px solid black;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
 }
@@ -10,14 +10,14 @@
 }
 
 .read-article-button {
-    width: 100%;
-    border: none;
-    padding: 10px;
     background-color: #b46bf0;
+    border: none;
     color: #FFF;
+    cursor: pointer;
     font-size: 1em;
     font-weight: bold;
-    cursor: pointer;
+    padding: 10px;
+    width: 100%;
 }
 
 .read-article-button:hover {
@@ -25,7 +25,7 @@
   }
 
 .card-body {
-    padding: 20px;
-    flex-grow: 1;
     background-color: #FFF;;
+    flex-grow: 1;
+    padding: 20px;
 }

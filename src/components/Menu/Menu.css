@@ -1,9 +1,9 @@
 .nav {
     background-color: #141527;
-    grid-area: m;
-    padding: 10px;
     display: flex;
     flex-direction: column;
+    grid-area: m;
+    padding: 10px;
 }
 
 span {
@@ -18,16 +18,20 @@ h1 {
 }
 
 .nav-button {
-    padding: 10px;
-    margin: 10px 0;
-    font-size: 13px;
-    border: none;
     border-radius: 2em;
-    /* background: none; */
+    border: none;
+    font-size: 13px;
+    margin: 10px 0;
+    padding: 10px;
 }
 
-.nav-button:hover {
+.nav-button:hover,
+.active {
     background-color: #ffad01;
-    cursor: pointer;
     border-radius: 2em;
+    border: none;
+    font-size: 13px;
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
 }

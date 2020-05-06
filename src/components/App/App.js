@@ -19,19 +19,28 @@ class App extends Component {
       entertainment: entertainment,
       science: science,
       health: health,
+      selectedTopicTitle: 'local'
     }
   }
 
   filterNews = (topicValue) => {
-        this.setState({selectedTopic: this.state[topicValue]})
+        this.setState({selectedTopic: this.state[topicValue], selectedTopicTitle: topicValue})
+
+  }
+
+  searchNews = (searchedText) => {
+    const results = this.state[this.state.selectedTopicTitle].filter(news => {
+      return ( news.description.toUpperCase().includes(searchedText) || news.headline.toUpperCase().includes(searchedText) )
+    })
+    this.setState({selectedTopic: results})
   }
 
   render () {
     return (
       <main className="app">
-        <Menu filterNews={this.filterNews} newsData={this.state.data} />
+        <Menu filterNews={this.filterNews} selectedTopicTitle={this.state.selectedTopicTitle} />
         <NewsContainer news={this.state.selectedTopic} />
-        <SearchForm />
+        <SearchForm searchNews={this.searchNews} />
         
       </main>
     );

@@ -10,14 +10,20 @@ class SearchForm extends Component {
         }
     }
 
-// handleChange = event => {
+handleChange = event => {
+    this.setState({ [event.target.name]: event.target.value });
+}
 
-// }
+handleSearch = event => {
+    event.preventDefault();
 
-// searchNews = event => {
-//     event.preventDefault();
-// }
+    this.props.searchNews(this.state.searched.toUpperCase())
+    this.clearInputs();
+}
 
+clearInputs = () => {
+    this.setState({searched: ''});
+}
 
 render() {
     return (
@@ -27,9 +33,9 @@ render() {
                 placeholder='Search for news articles here'
                 name='searched'
                 value={this.state.searched}
-                // onChange={event => this.handleChange(event)}
+                onChange={event => this.handleChange(event)}
             />
-            <button className='search-button' onClick={event => this.searchNews(event)}>SEARCH</button>
+            <button className='search-button' onClick={event => this.handleSearch(event)}>SEARCH</button>
         </form>
         )         
     }
