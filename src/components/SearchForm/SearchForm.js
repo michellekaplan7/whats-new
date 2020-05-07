@@ -30,6 +30,7 @@ class SearchForm extends Component {
     return (
       <form>
         <input
+          aria-label="search"
           type="text"
           placeholder="Search for news articles here"
           name="searched"
