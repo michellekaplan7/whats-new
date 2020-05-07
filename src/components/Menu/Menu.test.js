@@ -20,7 +20,7 @@ describe("Menu", () => {
     expect(getByText("Health")).toBeInTheDocument();
   });
 
-  it('displays a different category of news depending on which button is clicked', () => {
+  it("displays a different category of news depending on which button is clicked", () => {
     
     const mockFilterNews = jest.fn();
 
