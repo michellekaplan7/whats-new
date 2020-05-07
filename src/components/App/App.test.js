@@ -5,7 +5,7 @@ import '@testing-library/jest-dom/extend-expect';
 
 describe('App', () => {
     it("should display the articles that match the users search query within a specific category", () => {
-        const { getByText, getByPlaceholderText } = render(<App />)
+        const { getByPlaceholderText, getByText } = render(<App />)
 
         fireEvent.change(getByPlaceholderText("Search for news articles here"), {target: {value: "beer"}});
         fireEvent.click(getByText("SEARCH"));
