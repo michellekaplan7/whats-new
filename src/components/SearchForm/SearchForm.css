@@ -34,3 +34,7 @@ input {
 .search-button:hover {
   background-color: #d0acef;
 }
+
+input:focus {
+  outline: none;
+}
