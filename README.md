@@ -39,4 +39,4 @@ This project had a lot of moving pieces and parts and was the FIRST time we had 
 - Fix image sizing
 
 ## Contributors
-- Michelle Kaplan [https://github.com/michellekaplan7]
+- Michelle Kaplan[https://github.com/michellekaplan7]
