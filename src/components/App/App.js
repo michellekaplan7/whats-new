@@ -2,25 +2,36 @@ import React, { Component } from "react";
 import NewsContainer from "../NewsContainer/NewsContainer";
 import SearchForm from "../SearchForm/SearchForm";
 import Menu from "../Menu/Menu";
-import local from "../../data/local";
-import technology from "../../data/technology";
-import entertainment from "../../data/entertainment";
-import science from "../../data/science";
-import health from "../../data/health";
 import "./App.css";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      selectedTopic: local,
-      local: local,
-      technology: technology,
-      entertainment: entertainment,
-      science: science,
-      health: health,
+      local: [],
+      technology: [],
+      entertainment: [],
+      science: [],
+      health: [],
+      selectedTopic: [],
       selectedTopicTitle: "local",
     };
+  }
+
+  componentDidMount() {
+    fetch("https://whats-new-api.herokuapp.com/api/v1/news")
+      .then((response) => response.json())
+      .then((data) =>
+        this.setState({
+          local: data.local,
+          technology: data.technology,
+          entertainment: data.entertainment,
+          science: data.science,
+          health: data.health,
+          selectedTopic: data.local,
+        })
+      )
+      .catch((err) => console.log(err.message));
   }
 
   filterNews = (topicValue) => {
